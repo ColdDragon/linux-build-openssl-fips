@@ -10,16 +10,20 @@ Openssl : openssl-1.0.2n, openssl-fips-ecp-2.0.16(특허 문제)
 
 1. home/user{XXX}/openssl 폴더를 만들고 이동
 
-2. script download(openssl-build-fips.sh)
+2. openssl download(https://www.openssl.org/source/)
 
-3. openssl-build-fips.sh {yes|no} {yes|no} {ios sdk version} {macos sdk version} 실행
+3. openssl-fips download(https://www.openssl.org/source/)
 
-- openssl-build-fips.sh 상세 옵션
+4. script download(build-linux.sh)
 
-1. bitcode : bitcode 라이브러리
+5. build-linux.sh {yes|no} {output path} {openssl version} {openssl-fips version} 실행
 
-2. fips mode : fips 지원 라이브러리를 만듬
+- build-linux.sh 상세 옵션
 
-3. ios sdk version : 기본값(11.2)
+1. fips mode : fips 지원 라이브러리를 만듬
 
-4. macos sdk version : 기본값(10.13)
+2. output path : output path
+
+3. openssl version : openssl-1.0.2n
+
+4. openssl-fips version : openssl-fips-ecp-2.0.16
